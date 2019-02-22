@@ -10,8 +10,10 @@ public class Magic8Ball {
 
         keyboard = new Scanner(System.in);
 
+        System.out.println("Enter a number from 1 to 100");
+
         testing = keyboard.nextInt();
-        if((testing>=0)&(testing<=10)){
+        if((testing>=1)&(testing<=10)){
             System.out.println("It is certain.");
         }
         else if((testing>=11)&(testing<=20)){
@@ -40,6 +42,9 @@ public class Magic8Ball {
         }
         else if((testing>=91)&(testing<=100)){
             System.out.println("Nope.");
+        }
+        else{
+            System.out.println("That is not a number from 1 to 100.");
         }
 
 
